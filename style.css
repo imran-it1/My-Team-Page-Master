@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.text__part {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+.title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.62px;
+}
+
+.title__right {
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.description__right {
+    color: #000;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* -----Grid Start From Here---- */
+.grid img {
+    width: 100%;
+    height: auto;
+}
+
+.grid {
+    padding: 100px 100px;
+    /* height: 100vh; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px;
+}
+
+
+
+.image-one img {
+    border: 2px solid tomato;
+    border-radius: 5px;
+}
+
+.image-two img {
+    border: 2px solid rgb(240, 193, 40);
+    border-radius: 5px;
+}
+
+.image-three img {
+    border: 2px solid rgb(43, 240, 26);
+    border-radius: 5px;
+}
+
+.image-four img {
+    border: 2px solid rgb(10, 219, 174);
+    border-radius: 5px;
+}
+
+.image-five img {
+    border: 2px solid rgb(11, 97, 226);
+    border-radius: 5px;
+}
+
+.image-six img {
+    border: 2px solid rgb(238, 16, 219);
+    border-radius: 5px;
+}
+
+/* Image one */
+
+.image-one {
+    position: relative;
+}
+
+.image-one p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+/* Image Two */
+
+.image-two {
+    position: relative;
+    margin-top: 75px;
+    align-self: flex-end;
+}
+
+.image-two p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+/* Image Three */
+.image-three {
+    position: relative;
+}
+
+.image-three p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+/* Image Four */
+.image-four {
+    position: relative;
+}
+
+.image-four p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+/* Image Five */
+.image-five {
+    position: relative;
+    margin-top: 75px;
+    align-self: flex-end;
+}
+
+.image-five p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+/* Image Six */
+
+.image-six {
+    position: relative;
+}
+
+.image-six p {
+    position: absolute;
+    top: 7%;
+    right: -16%;
+    transform: rotate(90deg);
+}
+
+.role-one {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    color: #A9A9A9;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width:576px) {
+    .text__part {
+        flex-direction: column;
+        width: 80%;
+        align-items: flex-start;
+        /* margin-left: 20px; */
+        margin: auto;
+    }
+
+
+    .grid {
+        width: 80%;
+        margin: auto;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 55px;
+        padding: 70px 0px;
+    }
+
+    .image-four {
+        position: relative;
+        margin-top: 75px;
+        align-self: flex-end;
+    }
+
+    .image-five {
+        margin-top: 0px;
+        align-self: flex-start;
+    }
+
+    .image-six {
+        position: relative;
+        margin-top: 75px;
+        align-self: flex-end;
+    }
+
+    .image-one p {
+        position: absolute;
+        top: 16%;
+        right: -49%;
+        transform: rotate(90deg);
+    }
+
+    .image-two p {
+        position: absolute;
+        top: 20%;
+        right: -51%;
+        transform: rotate(90deg);
+    }
+
+    .image-three p {
+        position: absolute;
+        top: 16%;
+        right: -53%;
+        transform: rotate(90deg);
+    }
+
+    .image-four p {
+        position: absolute;
+        top: 21%;
+        right: -53%;
+        transform: rotate(90deg);
+    }
+
+    .image-five p {
+        position: absolute;
+        top: 20%;
+        right: -53%;
+        transform: rotate(90deg);
+    }
+
+    .image-six p {
+        position: absolute;
+        top: 20%;
+        right: -53%;
+        transform: rotate(90deg);
+    }
+}
